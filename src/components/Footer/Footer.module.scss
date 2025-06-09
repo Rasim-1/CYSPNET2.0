@@ -1,0 +1,141 @@
+.footer {
+    background-image: url(/bgfoot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100dvh;
+    height: 100dvh;
+    background-color: #00010F;
+  
+    @media (max-width: 1000px) {
+      padding-top: 30px;
+    }
+  }
+  .wrapper {
+    display: flex;
+  flex-direction: column;
+  
+
+   
+  }
+  .box {
+    border-bottom: 2px solid #ffffff1a;
+    position: relative;
+    padding-bottom: 120px; // добавили место под курочку
+  
+    display: flex;
+    justify-content: space-around;
+align-items: flex-start;
+
+gap: 200px;
+@media (max-width: 1250px) {
+  gap: 150px;
+}
+@media (max-width: 1100px) {
+  gap: 100px;
+}
+@media (max-width: 950px) {
+  gap: 50px;
+}
+@media (max-width: 700px) {
+ gap: 30px;
+  padding-bottom: 100px; // уменьшаем отступ снизу для мобильных устройств
+  
+}
+  }
+  
+  .logo img {
+    max-width: 100px;
+    margin-right: 200px;
+@media (max-width: 950px) {
+  margin-right: 100px;
+}
+    @media (max-width: 650px) {
+      max-width: 80px;
+      margin-right: 0;
+    }
+  }
+  
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: white;
+  
+    h4 {
+      margin-bottom: 10px;
+      color: #ffffff7d;
+      font-size: 16px;
+    }
+  
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.7s;
+      &:hover {
+        color: #F04451; // цвет при наведении
+      }
+    }
+    img{
+        width: 30px;
+        &:hover {
+            transform: scale(1.1); // увеличение при наведении
+            transition: transform 0.3s ease; // плавный переход
+          }
+    }
+  }
+  
+  .chicken {
+    position: absolute;
+bottom: 0;
+    right: 30%; // по правому краю
+    transform: translateX(50%); // чуть выступает за границу, как на скрине
+  
+    img {
+    width: 200px;
+      display: block;
+     
+   
+      transition: transform 1s ease; // плавный переход
+      &:hover {
+        transform: rotate(-2deg); // увеличение при наведении
+      }
+    }
+  }
+  
+  .wrapp{
+    display: flex;
+    justify-content: space-around  ;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+  @media (max-width: 700px) {
+      flex-direction: column;
+      align-items: center;
+        
+  }
+    p{
+        color: #ffffff7d;
+        font-size: 14px;
+        margin: 0;
+        &:hover {
+            color: #F04451; // цвет при наведении
+          }
+    }
+    a {
+      text-decoration: none;
+      color: #ffffff7d;
+      font-size: 14px;
+      transition: color 0.7s ease;
+  
+
+      &:hover {
+        color: #F04451; // цвет при наведении
+      }
+    }
+  }

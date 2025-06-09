@@ -1,0 +1,206 @@
+.opportunity {
+    background-image: url(/bg4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    justify-content: space-around  ; 
+    flex-direction: column;
+
+    align-items: center; 
+    max-height: 100dvh; 
+    height: 100dvh;
+ 
+ 
+    background-color: #181A28;
+    @media (max-width: 1000px) {
+      padding-top: 30px;
+    }
+    
+    
+      .title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        color: #fff;
+        @media (max-width: 1200px) {
+          font-size: 24px;
+          
+        }
+        @media (max-width: 650px) {
+          font-size: 20px;
+        }
+      }
+    
+      .cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      @media (max-width: 650px) {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr !important;
+      }
+        @media (max-width: 650px) {
+    .card:nth-child(n + 3) {
+      display: none;
+    }}
+      }
+    
+      .card {
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        padding: 34px 26px;
+        flex: 1 1 calc(25% - 20px);
+        max-width: 270px;
+        width: 100%;
+        min-width: 240px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        transition: all 0.3s ease;
+        background-repeat: no-repeat;
+        background-position:  left;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        flex-direction: column;
+
+        height: 300px;
+        &:nth-child(1) {
+          background-image: url(/one.png);
+
+        }
+        &:nth-child(2) {
+          background-image: url(/two.png);
+
+        }
+        &:nth-child(3) {
+          background-image: url(/the.png);
+
+        }
+        &:nth-child(4) {
+          background-image: url(/fou.png);
+
+        }
+      }
+    
+      .cardTitle {
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 16px;
+        color: #fff;
+      }
+    
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+        color: #fff;
+      }
+    
+      .slide {
+        text-align: center;
+        flex: 1;
+      }
+    
+      .icon {
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+        margin-bottom: 10px;
+      }
+    
+      .arrow {
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: white;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+        }
+      }
+    
+      .dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 12px;
+        gap: 6px;
+      }
+    
+      .dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.3);
+        transition: background-color 0.3s ease;
+    
+        &.activeDot {
+          background-color: #fff;
+        }
+      }
+    
+      @media (max-width: 1200px) {
+        .cards {
+         display: grid;
+         grid-template-columns: 1fr 1fr ;
+        }
+    
+        .card {
+        padding: 10px;
+        }
+      }
+    
+}
+
+.cards > :nth-child(1) .dot {
+    background-color: rgba(255, 79, 94, 0.3); // неактивные
+  }
+.cards > :nth-child(1) .activeDot {
+    background-color: #ff4f5e;
+    color: #ff4f5e;
+  }
+
+  .cards > :nth-child(2) .dot {
+    background-color:    rgba(255, 170, 0, 0.3);
+  }
+  .cards > :nth-child(2) .activeDot {
+    background-color: #ffaa00;
+    color: #ffaa00;
+
+  }
+
+  .cards > :nth-child(3) .dot {
+   
+    background-color: rgba(247, 91, 124, 0.3);
+
+  }
+  .cards > :nth-child(3) .activeDot {
+    background-color: #F75B7C;
+    color: #F75B7C;
+  }
+
+
+  .cards > :nth-child(4) .dot {
+    background-color:rgba(79, 175, 255, 0.3);
+  }
+  .cards > :nth-child(4) .activeDot {
+   color: #4fafff;
+    background-color: #4fafff;
+  }

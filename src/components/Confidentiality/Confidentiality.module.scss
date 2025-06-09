@@ -1,0 +1,64 @@
+.legalSection {
+  background-color: #1c1c1e;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 80px 20px 20px 20px;
+  box-sizing: border-box;
+color: #fff;
+  .legalContainer {
+    background-color: #2a2a2f;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 100px);
+    box-sizing: border-box;
+
+    .legalScroll {
+      h1{
+        font-size: 36px;
+      }
+      padding: 60px 40px;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #666 #2a2a2a;
+      box-sizing: border-box;
+      height: 100%;
+
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+      &::-webkit-scrollbar-track {
+        background: #2a2a2a;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #666;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .date {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: #4da6ff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .lightText {
+    color: #aaa;
+  }
+}
