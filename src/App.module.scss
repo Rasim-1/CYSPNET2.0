@@ -1,44 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-margin: 0;
-padding: 0;
-font-family: 'Raleway', 'Inter', 'Big Shoulders Stencil', sans-serif;
-}
-.container{
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 1600px;
-    width: 100%;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', 'Inter', 'Big Shoulders Stencil', sans-serif;
+  direction: ltr;
 }
 
-
-html,
-body {
-  overflow: hidden;
-  scroll-behavior: smooth;
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000; /* цвет фона страницы, поменяй на свой */
+  overflow: hidden; /* скрываем стандартный скролл */
 }
 
+/* Контейнер для контента */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 15px;
+  margin: 0 auto;
+  background-color: transparent;
+}
 
-body {
-    margin: 0;
-    // overflow-y: scroll;
-    direction: ltr; /* скроллбар будет слева */
-  }
-  
-  * {
-    direction: ltr; /* весь контент остаётся обычным */
-  }
-  
-  ::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  // ::-webkit-scrollbar-thumb {
-  //   // background-color: #888;
-  //   // border-radius: 10px;
-  // }
-  
+/* Если нужен скроллбар слева, раскомментируй этот блок */
+/*
+html {
+  direction: rtl;
+}
+body, .container {
+  direction: ltr;
+}
+*/
+
+/* Для отладки — показывает красную рамку вокруг body */
+/*
+html, body {
+  outline: 2px solid red;
+}
+*/
