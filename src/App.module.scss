@@ -36,9 +36,12 @@ body, .container {
 }
 */
 
-/* Для отладки — показывает красную рамку вокруг body */
-/*
-html, body {
-  outline: 2px solid red;
+*:focus {
+  outline: none;
 }
-*/
+html, body, #root {
+  background-color: black;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
