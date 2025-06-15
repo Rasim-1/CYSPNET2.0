@@ -11,16 +11,15 @@
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
+
   background-color: #000; /* цвет фона страницы, поменяй на свой */
   overflow: hidden; /* скрываем стандартный скролл */
 }
 
 /* Контейнер для контента */
 .container {
-  width: 100%;
-  min-height: 100vh;
+
+  max-width: 1450px; /* максимальная ширина контейнера */
   padding: 0 15px;
   margin: 0 auto;
   background-color: transparent;
