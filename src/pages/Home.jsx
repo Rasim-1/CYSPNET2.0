@@ -28,7 +28,7 @@ const sections = [
 const Home = () => (
   <>
     {sections}
-    <Scroll sectionCount={sections.length} />
+    {/* <Scroll sectionCount={sections.length} /> */}
   </>
 );
 
