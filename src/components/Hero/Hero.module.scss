@@ -43,10 +43,11 @@
     margin-bottom: 150px;
     height: 50dvh;
     @media (max-width: 1000px) {
-      max-width: 400px;
     }
     @media (max-width: 850px) {
-    padding-bottom: 30px !important;
+        max-width: 350px;
+        margin-left: 20px;
+    margin-bottom: 30px !important;
     }
     >p{
         

@@ -24,9 +24,9 @@ const Footer = () => {
 
             <div className={s.nav}>
               <h4>Разное</h4>
-              <a href="/helppage">Поддержать проект</a>
-              <a href="/gratitude">Благодарности</a>
-              <a href="/contactpage">Контакты</a>
+              <Link to="/helppage">Поддержать проект</Link>
+              <Link to="/gratitude">Благодарности</Link>
+              <Link to="/contactpage">Контакты</Link>
             </div>
 
             <div className={s.nav}>
